@@ -1,14 +1,19 @@
 public class Doctor {
+    // created attributes
+
     String name;
     String phoneNumber;
     String speciality;
 
-    public Doctor(String name, String phoneNumber, String speciality) {
+    // created constructor for attributes
+        public Doctor(String name, String phoneNumber, String speciality) {
         this.name = name;
         this.phoneNumber = phoneNumber;
         this.speciality = speciality;
     }
 
+
+    // getters and setters
     public String getName() {
         return name;
     }
@@ -32,4 +37,14 @@ public class Doctor {
     public void setSpeciality(String speciality) {
         this.speciality = speciality;
     }
-}
+
+    // made a print method to print input
+    public void print() {
+        System.out.println("" + name + " -- " + phoneNumber  + " --" + speciality);
+    }
+
+
+
+    }
+
+

@@ -1,9 +1,12 @@
 public class Patient {
+    // created attributes
     String name;
     String phoneNumber;
     String description;
     int age;
 
+
+    // created constructor for attributes
     public Patient(String name, String phoneNumber, String description, int age) {
         this.name = name;
         this.phoneNumber = phoneNumber;
@@ -11,6 +14,7 @@ public class Patient {
         this.age = age;
     }
 
+    // getters and setters
     public String getName() {
         return name;
     }
@@ -44,4 +48,9 @@ public class Patient {
     }
 
 
+
+    // made a print method to print out input
+    public void print() {
+        System.out.println("--" + name + " -- " + phoneNumber + "--" +description+ " --" + age);
+    }
 }
